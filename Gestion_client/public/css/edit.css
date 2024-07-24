@@ -1,0 +1,99 @@
+/* Style du formulaire */
+.formulaire {
+    width: 400px; /* Augmentation de la largeur du formulaire */
+    margin: 20px;
+    padding: 30px; /* Augmentation du padding */
+    background-color: #afecff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Style des labels */
+.formulaire label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* Augmentation du margin-bottom */
+}
+
+/* Style des champs de saisie */
+.formulaire input,
+.formulaire select {
+    width: 100%; /* Augmentation de la largeur */
+    padding: 10px; /* Augmentation du padding */
+    margin-bottom: 15px; /* Augmentation du margin-bottom */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Assurer que le padding et la bordure sont inclus dans la largeur et la hauteur */
+}
+
+/* Style du bouton de soumission */
+.formulaire input[type="submit"] {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px; /* Augmentation du padding */
+    width: 100%; /* Assurer que le bouton prend toute la largeur du formulaire */
+}
+
+.formulaire input[type="submit"]:hover {
+    background-color: #ff8604;
+}
+
+/* Animations */
+.formulaire input,
+.formulaire select,
+.formulaire label,
+.formulaire input[type="submit"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style du header */
+.client-heading {
+    text-align: left;
+    color: rgb(56, 68, 191);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Style de l'image */
+.image-modif {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-modif img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Style du corps avec l'image de fond */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../../public/images/modifier.jpg') no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Ajustement de la hauteur */
+    margin: 0;
+}

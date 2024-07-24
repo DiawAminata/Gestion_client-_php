@@ -1,0 +1,38 @@
+/* Style pour le div contenant le rapport */
+.report {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #349dc7;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-image: url('../../public/images/genere.jpg'); /* Ajoutez le chemin vers votre image en arrière-plan */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Style pour le titre du rapport */
+.report h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style pour chaque section de statistique */
+.statistic {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+/* Style pour le texte des statistiques */
+.statistic p {
+    margin: 0;
+    color: #333;
+}
+h1{
+    color: aqua;
+}

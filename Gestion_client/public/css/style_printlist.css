@@ -1,0 +1,32 @@
+/* Style pour le div transparent de la fonction printList */
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+h1{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    color: rgb(27, 109, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.client-info {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: rgba(6, 172, 4, 0.8); /* Couleur de fond transparente */
+    background-size: cover;
+    border-radius: 10px;
+}
+body{
+    background-image: url('../../public/images/imprime.jpg'); /* Ajoutez le chemin vers votre image en arrière-plan */
+    background-size: cover;
+    background-repeat: no-repeat;
+}

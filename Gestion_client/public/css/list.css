@@ -1,0 +1,217 @@
+/* CSS pour le div contenant les liens en haut de la page */
+
+
+.top-links {
+  text-align: right;
+}
+
+.top-links a {
+  margin-left: 10px;
+  color: #020202;
+  text-decoration: none;
+}
+
+/* CSS pour la liste des clients */
+.client-list {
+  margin-top: 20px;
+}
+
+.client-list h1 {
+  margin-bottom: 10px;
+}
+
+.client-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a5fd; 
+  padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 80%; 
+  margin: 0 auto; 
+  color: rgb(14, 0, 210);
+}
+
+.client-filter input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 16px; 
+}
+
+.client-filter input[type="submit"] {
+  background-color: #da0091; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+  font-size: 16px; 
+ 
+}
+
+.client-filter input[type="submit"]:hover {
+  background-color: #45a049; 
+}
+
+.client-heading {
+
+  text-align: center;
+  color: white;
+}
+
+
+
+/* Style pour l'image d'arrière-plan */
+.client-list {
+  
+  background-size: cover; 
+  background-position: center; 
+  border-bottom: 1px solid black; 
+  padding: 10px; 
+  margin-top: -10px;
+}
+
+/* Style pour les liens dans la div "Liste des clients" */
+.client-list a {
+  margin-left: 10px;
+  color: blue; 
+  text-decoration: none;
+}
+/* Style pour l'image dans la div "Liste des clients" */
+.client-list img {
+  float: right; 
+  
+}
+
+/* Style pour la div "welcome-message" */
+.welcome-message {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 10px; 
+  margin-top:10%;
+}
+
+
+/* Style pour le texte "Bienvenue dans votre application de gestion clientèle" */
+.welcome-message p {
+  font-size: 50px;
+  font-weight: bold;
+  color:rgb(0, 0, 118);
+}
+
+.welcome-text {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #020075;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  justify-content: space-between;
+  padding-bottom:  20px;
+  font-size: 18px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(173, 81, 14);
+  color: white;
+  
+}
+
+/* Styles pour le tableau interactif */
+/* Styles pour le tableau interactif */
+.animated-table {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+  animation: fadeIn 1s;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.column-header {
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(153, 64, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  align-items: center;
+}
+
+.cell {
+  text-align: center;
+  padding: 10px;
+  flex: 3;
+}
+
+/* Animation pour le tableau */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#sort-dropdown option {
+  font-size: 16px;
+}
+.icone-tri img{
+ max-width: 200px;
+ height: auto;
+ margin-top: 50px;
+
+}
+
+.trier-client{
+    color: rgb(205, 97, 20);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sort-links {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sort-links label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .sort-links select {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
