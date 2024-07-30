@@ -15,7 +15,7 @@ class AdminModel {
         try {
             $query = "INSERT INTO admin (nom, email, mot_de_passe) VALUES (?, ?, ?)";
             $stmt = $this->db->prepare($query);
-            $stmt->execute([$nom,  $email, password_hash($mot_de_passe, PASSWORD_BCRYPT)]);
+            $stmt->execute([$nom, $email, password_hash($mot_de_passe, PASSWORD_BCRYPT)]);
             return true;
         } catch (PDOException $e) {
             die("Erreur lors de l'ajout de l'administrateur : " . $e->getMessage());

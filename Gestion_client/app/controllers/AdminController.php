@@ -1,5 +1,5 @@
 <?php
-require_once '../models/admin.php';
+require_once '../models/Admin.php';
 
 class AdminController {
     private $model;
@@ -9,8 +9,8 @@ class AdminController {
     }
 
     // Ajouter un administrateur
-    public function ajouterAdmin($nom,   $email, $mot_de_passe) {
-        if ($this->model->ajouterAdmin($nom,  $email, $mot_de_passe)) {
+    public function ajouterAdmin($nom, $email, $mot_de_passe) {
+        if ($this->model->ajouterAdmin($nom, $email, $mot_de_passe)) {
             echo 'Administrateur ajouté avec succès.';
         }
     }
@@ -23,8 +23,8 @@ class AdminController {
     }
 
     // Modifier un administrateur
-    public function modifierAdmin($id, $nom,  $email, $mot_de_passe) {
-        if ($this->model->modifierAdmin($id, $nom,  $email, $mot_de_passe)) {
+    public function modifierAdmin($id, $nom, $email, $mot_de_passe) {
+        if ($this->model->modifierAdmin($id, $nom, $email, $mot_de_passe)) {
             echo 'Administrateur modifié avec succès.';
         }
     }

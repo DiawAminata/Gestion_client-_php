@@ -210,7 +210,7 @@ class ClientController
     // Méthode pour exporter la liste des clients au format PDF
     public function exportPDF()
     {
-        require_once __DIR__ . '/vendor/autoload.php'; // Assurez-vous que le chemin est correct
+        require_once __DIR__ . '../../../vendor/autoload.php'; // Assurez-vous que le chemin est correct
     
         global $db;
     

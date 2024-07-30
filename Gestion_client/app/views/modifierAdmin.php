@@ -1,5 +1,5 @@
 <?php
-require_once '../controllers/adminController.php';
+require_once '../controllers/AdminController.php';
 
 $controller = new AdminController();
 
@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $mot_de_passe = $_POST['mot_de_passe'];
 
-    $controller->modifierAdmin($id, $nom, $prenom, $email, $mot_de_passe);
+    $controller->modifierAdmin($id, $nom, $email, $mot_de_passe);
 }
 
 if (isset($_GET['id'])) {

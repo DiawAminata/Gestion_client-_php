@@ -1,5 +1,6 @@
 <?php
-require_once '../controllers/adminController.php';
+require_once '../controllers/AdminController.php';
+
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
